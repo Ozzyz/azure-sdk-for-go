@@ -1797,7 +1797,7 @@ type LegacyUsageDetailProperties struct {
 	// OfferID - READ-ONLY; Offer Id. Ex: MS-AZR-0017P, MS-AZR-0148P.
 	OfferID *string `json:"offerId,omitempty"`
 	// IsAzureCreditEligible - READ-ONLY; Is Azure Credit Eligible.
-	IsAzureCreditEligible *bool `json:"isAzureCreditEligible,omitempty"`
+	IsAzureCreditEligible *string `json:"isAzureCreditEligible,omitempty"`
 	// Term - READ-ONLY; Term (in months). 1 month for monthly recurring purchase. 12 months for a 1 year reservation. 36 months for a 3 year reservation.
 	Term *string `json:"term,omitempty"`
 	// PublisherName - READ-ONLY; Publisher Name.
