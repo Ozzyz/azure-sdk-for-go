@@ -3316,7 +3316,7 @@ type ModernUsageDetailProperties struct {
 	// ProductOrderName - READ-ONLY; Product Order Name. For reservations this is the SKU that was purchased.
 	ProductOrderName *string `json:"productOrderName,omitempty"`
 	// IsAzureCreditEligible - READ-ONLY; Determines if the cost is eligible to be paid for using Azure credits.
-	IsAzureCreditEligible *bool `json:"isAzureCreditEligible,omitempty"`
+	IsAzureCreditEligible *string `json:"isAzureCreditEligible,omitempty"`
 	// Term - READ-ONLY; Term (in months). Displays the term for the validity of the offer. For example. In case of reserved instances it displays 12 months for yearly term of reserved instance. For one time purchases or recurring purchases, the terms displays 1 month; This is not applicable for Azure consumption.
 	Term *string `json:"term,omitempty"`
 	// PublisherName - READ-ONLY; Name of the publisher of the service including Microsoft or Third Party publishers.
