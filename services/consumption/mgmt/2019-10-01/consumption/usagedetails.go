@@ -196,7 +196,7 @@ func (client UsageDetailsClient) listNextResults(ctx context.Context, lastResult
 	}
 	return
 }
-
+/* 
 // ListComplete enumerates all values, automatically crossing page boundaries as required.
 func (client UsageDetailsClient) ListComplete(ctx context.Context, scope string, expand string, filter string, skiptoken string, top *int32, metric Metrictype) (result UsageDetailsListResultIterator, err error) {
 	if tracing.IsEnabled() {
@@ -212,3 +212,4 @@ func (client UsageDetailsClient) ListComplete(ctx context.Context, scope string,
 	result.page, err = client.List(ctx, scope, expand, filter, skiptoken, top, metric)
 	return
 }
+*/
