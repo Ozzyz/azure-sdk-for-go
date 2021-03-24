@@ -20,13 +20,14 @@ package consumption
 import (
 	"context"
 	"encoding/json"
+	"net/http"
+
 	"github.com/Azure/go-autorest/autorest"
 	"github.com/Azure/go-autorest/autorest/date"
 	"github.com/Azure/go-autorest/autorest/to"
 	"github.com/Azure/go-autorest/tracing"
 	"github.com/gofrs/uuid"
 	"github.com/shopspring/decimal"
-	"net/http"
 )
 
 // The package's fully qualified name.
@@ -1797,7 +1798,7 @@ type LegacyUsageDetailProperties struct {
 	// OfferID - READ-ONLY; Offer Id. Ex: MS-AZR-0017P, MS-AZR-0148P.
 	OfferID *string `json:"offerId,omitempty"`
 	// IsAzureCreditEligible - READ-ONLY; Is Azure Credit Eligible.
-	IsAzureCreditEligible *string `json:"isAzureCreditEligible,omitempty"`
+	IsAzureCreditEligible *bool `json:"isAzureCreditEligible,omitempty"`
 	// Term - READ-ONLY; Term (in months). 1 month for monthly recurring purchase. 12 months for a 1 year reservation. 36 months for a 3 year reservation.
 	Term *string `json:"term,omitempty"`
 	// PublisherName - READ-ONLY; Publisher Name.
